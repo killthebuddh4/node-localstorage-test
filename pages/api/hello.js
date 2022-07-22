@@ -11,8 +11,8 @@ export default function handler(req, res) {
   console.log(p);
   console.log(fs.statSync('/var'))
   console.log(fs.statSync('/var/task'))
-  console.log(fs.statSync('/var/task/scratch'))
-  // fs.mkdirSync(p, { recursive: true })
+  fs.mkdirSync('/var/task/scratch');
+  // console.log(fs.statSync('/var/task/scratch'))
   
   res.status(200).json({ name: 'test' })
 }
