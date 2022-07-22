@@ -9,7 +9,7 @@ export default function handler(req, res) {
   });
   const p = path.resolve('./scratch');
   console.log(p);
-  fs.mkdirSync(p, { recursive: true })
+  // fs.mkdirSync(p, { recursive: true })
   
   res.status(200).json({ name: 'test' })
 }
