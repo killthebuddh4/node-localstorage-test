@@ -3,7 +3,7 @@
 import * as fs from 'fs';
 
 export default function handler(req, res) {
-fs.readdirSync('.').forEach(file => {
+fs.readdirSync('/var').forEach(file => {
   console.log(file);
 });
   res.status(200).json({ name: 'test' })
