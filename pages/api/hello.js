@@ -2,5 +2,5 @@
 import { Client } from "@xmtp/xmtp-js";
 
 export default function handler(req, res) {
-  res.status(200).json({ name: String(Client) })
+  res.status(200).json({ name: 'test' })
 }
