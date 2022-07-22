@@ -9,6 +9,9 @@ export default function handler(req, res) {
   });
   const p = path.resolve('./scratch');
   console.log(p);
+  console.log(fs.stat('/var'))
+  console.log(fs.stat('/var/task'))
+  console.log(fs.stat('/var/task/scratch'))
   // fs.mkdirSync(p, { recursive: true })
   
   res.status(200).json({ name: 'test' })
