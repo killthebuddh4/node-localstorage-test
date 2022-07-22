@@ -7,7 +7,9 @@ export default function handler(req, res) {
   fs.readdirSync('.').forEach(file => {
     console.log(file);
   });
-  fs.mkdirSync(path.resolve('./scratch'), { recursive: true })
+  const p = path.resolve('./scratch');
+  console.log(p);
+  fs.mkdirSync(p, { recursive: true })
   
   res.status(200).json({ name: 'test' })
 }
