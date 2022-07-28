@@ -3,7 +3,7 @@
 
 if (typeof localStorage === "undefined" || localStorage === null) {
   var LocalStorage = require('node-localstorage').LocalStorage;
-  global.localStorage = new LocalStorage('./scratch');
+  global.localStorage = new LocalStorage('/tmp/scratch');
 }
 
 export default function handler(req, res) {
