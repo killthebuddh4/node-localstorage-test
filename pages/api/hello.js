@@ -7,5 +7,5 @@ if (typeof localStorage === "undefined" || localStorage === null) {
 }
 
 export default function handler(req, res) {
-  res.status(200).json({ name: 'wait what' })
+  res.status(200).json({ name: 'wait still works?' })
 }
